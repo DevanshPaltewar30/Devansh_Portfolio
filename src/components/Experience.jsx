@@ -13,6 +13,15 @@ const experiences = [
       "Processed 100,000+ records through preprocessing and missing-value handling pipelines.",
       "Collaborated with ALDC engineers to validate and deploy forecasting models in production.",
     ]
+  },
+  {
+    role: "AI / ML Developer",
+    company: "DevUnite",
+    period: "2024 – 2025",
+    description: [
+      "Engineered and deployed Retrieval-Augmented Generation (RAG) pipelines integrating vector databases, embeddings, and LLMs for semantic search and accurate contextual responses.",
+      "Developed and tuned machine learning models for data preprocessing, feature engineering, and predictive workflows."
+    ]
   }
 ];
 
