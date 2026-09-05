@@ -17,7 +17,7 @@ const experiences = [
   {
     role: "AI / ML Developer",
     company: "DevUnite",
-    period: "2024 – 2025",
+    period: "July 2026 – 2026",
     description: [
       "Engineered and deployed Retrieval-Augmented Generation (RAG) pipelines integrating vector databases, embeddings, and LLMs for semantic search and accurate contextual responses.",
       "Developed and tuned machine learning models for data preprocessing, feature engineering, and predictive workflows."
@@ -26,18 +26,18 @@ const experiences = [
 ];
 
 const containerVariants = {
-  hidden:  { opacity: 0 },
+  hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.18 } }
 };
 
 const itemVariants = {
-  hidden:  { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } }
 };
 
 const Experience = () => (
   <section id="experience" className="experience section">
-    <motion.div 
+    <motion.div
       className="section-watermark"
       initial={{ x: -50, opacity: 0 }}
       whileInView={{ x: 0, opacity: 0.04 }}
@@ -46,7 +46,7 @@ const Experience = () => (
     >
       CAREER
     </motion.div>
-    
+
     <div className="container" style={{ position: 'relative', zIndex: 1 }}>
       <motion.div
         initial={{ opacity: 0, y: 16 }}

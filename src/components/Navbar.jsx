@@ -4,8 +4,8 @@ import { Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen]       = useState(false);
-  const [scrolled, setScrolled]   = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -17,7 +17,7 @@ const Navbar = () => {
     <motion.nav
       className={`navbar${scrolled ? ' scrolled' : ''}`}
       initial={{ y: -80, x: '-50%', opacity: 0 }}
-      animate={{ y: 0,   x: '-50%', opacity: 1 }}
+      animate={{ y: 0, x: '-50%', opacity: 1 }}
       transition={{ duration: 0.8, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
     >
       <div className="navbar-container">

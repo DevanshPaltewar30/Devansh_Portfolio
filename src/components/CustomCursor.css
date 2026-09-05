@@ -1,4 +1,3 @@
-
 /* Ensure the custom cursor is always on top and doesn't interfere with clicks */
 .custom-cursor {
   position: fixed;
@@ -25,8 +24,10 @@
 }
 
 @media (max-width: 1024px) {
+
   /* Disable custom cursor on tablets and mobile devices */
-  .custom-cursor, .custom-cursor-dot {
+  .custom-cursor,
+  .custom-cursor-dot {
     display: none !important;
   }
 }

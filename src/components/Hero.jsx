@@ -5,12 +5,12 @@ import profilePhoto from '../Gallery/Devansh Linkdin.png';
 import './Hero.css';
 
 const containerVariants = {
-  hidden:  { opacity: 0 },
+  hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.12, delayChildren: 0.3 } }
 };
 
 const itemVariants = {
-  hidden:  { opacity: 0, y: 30, filter: 'blur(5px)' },
+  hidden: { opacity: 0, y: 30, filter: 'blur(5px)' },
   visible: { opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
 };
 
@@ -65,25 +65,14 @@ const Hero = () => (
         animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
         transition={{ duration: 1.2, delay: 0.6, type: 'spring', stiffness: 100, damping: 20 }}
       >
-        <motion.div 
+        <motion.div
           className="hero-photo-frame"
           whileHover={{ scale: 1.05, rotate: 2 }}
           transition={{ type: 'spring', stiffness: 300, damping: 15 }}
         >
           <img src={profilePhoto} alt="Devansh Paltewar" className="hero-photo" />
         </motion.div>
-        
-        {/* Animated decorative rings */}
-        <motion.div 
-          className="hero-ring hero-ring-1"
-          animate={{ rotate: 360 }}
-          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        />
-        <motion.div 
-          className="hero-ring hero-ring-2"
-          animate={{ rotate: -360 }}
-          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-        />
+
       </motion.div>
 
       {/* ── Right: Text ── */}
@@ -108,16 +97,16 @@ const Hero = () => (
         </motion.p>
 
         <motion.div className="hero-actions" variants={itemVariants}>
-          <motion.a 
-            href="#contact" 
+          <motion.a
+            href="#contact"
             className="btn btn-primary"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             <Mail size={16} /> Get in Touch
           </motion.a>
-          <motion.a 
-            href="#about" 
+          <motion.a
+            href="#about"
             className="btn btn-outline"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}

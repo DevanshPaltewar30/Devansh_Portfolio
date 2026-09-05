@@ -1,4 +1,6 @@
-.section-header { margin-bottom: 0; }
+.section-header {
+  margin-bottom: 0;
+}
 
 .skills-grid {
   display: grid;

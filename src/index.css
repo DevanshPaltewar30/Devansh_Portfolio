@@ -2,44 +2,53 @@
 
 :root {
   /* ── Core Palette — Premium Colorful Light Theme ── */
-  --bg-color:       #f4f6fa;
-  --bg-secondary:   #eaeef6;
-  --bg-card:        rgba(255, 255, 255, 0.85);
+  --bg-color: #f4f6fa;
+  --bg-secondary: #eaeef6;
+  --bg-card: rgba(255, 255, 255, 0.85);
 
   /* ── Text — Deep Slate Crisp ── */
-  --text-primary:   #0f172a;
+  --text-primary: #0f172a;
   --text-secondary: #475569;
-  --text-muted:     #64748b;
+  --text-muted: #64748b;
 
   /* ── Accent — Vibrant Royal Blue, Indigo & Sky Cyan ── */
-  --accent:         #1d4ed8;
-  --accent-light:   #2563eb;
-  --accent-cyan:    #0284c7;
-  --accent-purple:  #7c3aed;
-  --accent-dim:     rgba(37, 99, 235, 0.08);
-  --accent-border:  rgba(37, 99, 235, 0.22);
-  --accent-glow:    rgba(37, 99, 235, 0.25);
+  --accent: #1d4ed8;
+  --accent-light: #2563eb;
+  --accent-cyan: #0284c7;
+  --accent-purple: #7c3aed;
+  --accent-dim: rgba(37, 99, 235, 0.08);
+  --accent-border: rgba(37, 99, 235, 0.22);
+  --accent-glow: rgba(37, 99, 235, 0.25);
 
   /* ── Borders & Glass Surfaces ── */
-  --border:         rgba(0, 0, 0, 0.08);
-  --border-hover:   rgba(37, 99, 235, 0.35);
-  --surface:        rgba(37, 99, 235, 0.03);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(37, 99, 235, 0.35);
+  --surface: rgba(37, 99, 235, 0.03);
 
   /* ── Typography ── */
-  --font-sans:      'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif:     'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
 
   /* ── Radius & Spacing ── */
-  --radius-sm:  8px;
-  --radius-md:  12px;
-  --radius-lg:  16px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
 }
 
 /* ========================
    RESET & BASE
 ======================== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-sans);
@@ -55,7 +64,12 @@ body {
 /* ========================
    TYPOGRAPHY
 ======================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-sans);
   font-weight: 600;
   line-height: 1.25;
@@ -63,14 +77,19 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.025em;
 }
 
-p { color: var(--text-secondary); }
+p {
+  color: var(--text-secondary);
+}
 
 a {
   color: inherit;
   text-decoration: none;
   transition: color 0.2s ease;
 }
-a:hover { color: var(--accent-light); }
+
+a:hover {
+  color: var(--accent-light);
+}
 
 /* ========================
    LAYOUT
@@ -81,7 +100,10 @@ a:hover { color: var(--accent-light); }
   padding: 0 2rem;
 }
 
-.section { padding: 7rem 0; position: relative; }
+.section {
+  padding: 7rem 0;
+  position: relative;
+}
 
 /* ========================
    SECTION HEADING
@@ -144,6 +166,7 @@ a:hover { color: var(--accent-light); }
   box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
   transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 .card:hover {
   border-color: var(--border-hover);
   box-shadow: 0 12px 35px rgba(37, 99, 235, 0.12);
@@ -173,6 +196,7 @@ a:hover { color: var(--accent-light); }
   color: #fff;
   box-shadow: 0 4px 16px rgba(37, 99, 235, 0.3);
 }
+
 .btn-primary:hover {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   color: #fff;
@@ -186,6 +210,7 @@ a:hover { color: var(--accent-light); }
   border: 1px solid var(--border-hover);
   backdrop-filter: blur(12px);
 }
+
 .btn-outline:hover {
   border-color: var(--accent);
   color: var(--accent);
@@ -196,12 +221,19 @@ a:hover { color: var(--accent-light); }
 /* ========================
    SCROLLBAR
 ======================== */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-color); }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 6px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent);
 }
@@ -218,13 +250,29 @@ a:hover { color: var(--accent-light); }
    RESPONSIVE (GLOBAL)
 ======================== */
 @media (max-width: 768px) {
-  .section { padding: 4rem 0; }
-  .section-watermark { display: none; }
-  .section-title { font-size: 2rem; }
-  .container { padding: 0 1.25rem; }
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-watermark {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .section { padding: 3rem 0; }
-  .section-title { font-size: 1.75rem; }
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
 }

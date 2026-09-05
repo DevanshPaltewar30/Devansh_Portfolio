@@ -147,8 +147,15 @@
 }
 
 @keyframes scroll-bob {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(5px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
 }
 
 /* ── Responsive ── */
@@ -158,18 +165,32 @@
     text-align: center;
     gap: 2.5rem;
   }
+
   .hero-photo-frame {
     width: 190px;
     height: 190px;
     margin: 0 auto;
   }
-  .hero-summary { margin-left: auto; margin-right: auto; }
-  .hero-actions { justify-content: center; }
-  .hero-eyebrow { display: inline-block; }
+
+  .hero-summary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 480px) {
-  .hero-name { font-size: 2.25rem; }
+  .hero-name {
+    font-size: 2.25rem;
+  }
+
   .hero-photo-frame {
     width: 150px;
     height: 150px;

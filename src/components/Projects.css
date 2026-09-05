@@ -21,7 +21,9 @@
   box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
 }
 
-.project-body { flex: 1; }
+.project-body {
+  flex: 1;
+}
 
 /* ========================
    TITLE & DESC
@@ -75,6 +77,7 @@
   border-radius: 4px;
   transition: border-color 0.2s, color 0.2s;
 }
+
 .project-tag:hover {
   border-color: var(--accent-border);
   color: var(--accent);
